@@ -15,10 +15,11 @@
   box-shadow: 7px 7px 5px black;
 }
 .card:hover {
-  background-color: navy;
+  background-color: Navy;
   color: aqua;
 }
 
-.Form {
-  padding: 5%;
+.title {
+  color: aqua;
+  text-shadow: 5px 5px 5px black;
 }

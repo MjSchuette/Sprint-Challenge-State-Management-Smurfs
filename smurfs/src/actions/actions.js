@@ -11,7 +11,7 @@ export const loadSmurf = () => dispatch => {
         .then(res => {
             dispatch({ type: LOADING_SUCCESS, payload: res.data });
         })
-}
+};
 
 //adds new smurf to the thing
 export const addSmurf = smurf => dispatch => {

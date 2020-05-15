@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 classname='title'>Smurf Village</h1>
+        <h1 className='title'>Smurf Village</h1>
         <Card />
         <CallCard />        
       </div>
