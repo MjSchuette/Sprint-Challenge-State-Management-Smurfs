@@ -6,9 +6,19 @@ export const LOADING_SUCCESS = 'LOADING-SUCCESS';
 export const loadSmurf = () => dispatch => {
     dispatch({ type: GET_DATA });
     axios
-    .get('http://localhost:3333/smurfs')
-    .then(res => {
-        dispatch({ type: LOADING_SUCCESS, payload: res.data });
-    })
+        .get('http://localhost:3333/smurfs')
+        .then(res => {
+            dispatch({ type: LOADING_SUCCESS, payload: res.data });
+        })
 }
-
+//adds new smurf to the thing
+export const addSmurf = () => dispatch => {
+    axios
+        .post('http://localhost:3333/smurfs', smurf)
+        .then(res => {
+            dispatch({ type: LOADING_SUCCESS, payload: res.data });
+        })
+        .catch(err => {
+            console.log('addSmurf isnt working');
+        })
+};
